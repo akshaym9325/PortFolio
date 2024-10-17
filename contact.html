@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .favicon {
+            border: 1px solid #27a776;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 24px;
+            padding: 15px;
+            color: #27a776;
+        }
+
+        .info-item:hover .favicon {
+            background-color: #27a776;
+            color: white;
+        }
+
+        .formrow {
+            background-color: rgb(20, 20, 20);
+            color: white;
+        }
+
+        input {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar section -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand px-5" href="index.html">PortFolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-4" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu justify-content-center text-center">
+                                <li><a class="dropdown-item text-dark" href="https://akshaym9325.github.io/travel/"
+                                        target="_blank">Tour & Travel</a></li>
+                                <li><a class="dropdown-item text-dark" href="https://akshaym9325.github.io/Coffee/"
+                                        target="_blank">Coffee Shop</a></li>
+                                <li><a class="dropdown-item text-dark" href="#">E-commerse</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-auto gap-1 justify-content-center text-center">
+                        <a href="#" class="icon"><i class="fa-brands fa-x-twitter mx-2"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook mx-2"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-instagram mx-2"></i></a>
+                        <a href="https://www.linkedin.com/in/akshay-mandhare" target="_blank" class="icon"><i
+                                class="fa-brands fa-linkedin mx-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- section -->
+    <div class="text-white">
+        <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-8 my-5">
+                    <h1 style="font-size: 64px; font-weight: 400; color: #27a776;">Contact</h1>
+                    <p class="mb-0">I would love to hear from you. Whether you have a question, a project in mind,
+                        or
+                        just want to say hello, feel free to reach out. Let's connect and create something amazing
+                        together!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section text-white my-5">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-wrap mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-5">
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot favicon" aria-hidden="true"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Navi Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="fa-solid fa-phone favicon" aria-hidden="true"></i>
+                            <div>
+                                <h3>Call</h3>
+                                <p>+91 1234567890</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex align-items-center">
+                            <i class="fa-solid fa-envelope favicon" aria-hidden="true"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>akshay@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form id="myform" action="" method="post" class="" data-aos="fade-up"
+                data-aos-delay="300">
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control formrow" placeholder="Your Name" required="">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control formrow" name="email" placeholder="Your Email"
+                            required="">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control formrow" name="subject" placeholder="Subject"
+                            required="">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea class="form-control formrow" name="message" rows="6" placeholder="Message"
+                            required=""></textarea>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="text-center">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>All Rights
+                        Reserved</span></p>
+            </div>
+            <div class="social-links d-flex justify-content-center my-4 gap-3">
+                <a href="#" class="icon"><i class="fa-brands fa-x-twitter mx-2"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook mx-2"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-instagram mx-2"></i></a>
+                <a href="https://www.linkedin.com/in/akshay-mandhare" class="icon"><i class="fa-brands fa-linkedin mx-2"></i></a>
+            </div>
+            <div class="text-center">
+                Designed by Akshay Mandhare 🧡
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
